@@ -1,0 +1,15 @@
+*** Setting up API Key ***
+In order to access the Yelp API you must request an access key.
+Then in create a config.js file in the src/api directory (ie: src/api/config.js).
+
+The config.js file should contain:
+// Store API key
+const key =
+  "{YOUR API KEY HERE}";
+export default key;
+
+The yelp.js file imports the key and uses it to access the API.
+
+*** Location ***
+The search location for the app is hard coded at this time. It is currently set to Maryland. 
+This can be changed in the src/hooks/useResults.js file, in the searchApi() function.
